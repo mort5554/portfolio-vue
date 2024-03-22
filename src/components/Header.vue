@@ -5,7 +5,6 @@
 <template>
 <header>
     <div class="headline" tabindex="0">
-        
         <h1>Passionate Web Developer | Creating Engaging Digital Experiences</h1>
     </div>
     <div class="imgContainer">
