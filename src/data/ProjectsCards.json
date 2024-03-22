@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "img": "NotesApp.png",
+        "frontdescription": "Introducing a dynamic Todo List built",
+        "backdescription": "It is a minimalist but powerful Todo App in which you can create your notes",
+        "pageLink": "https://mort5554.github.io/NotesApp-vue/",
+        "githubLink": "https://github.com/mort5554/NotesApp-vue",
+        "toolsUsed": "NotesAppToolsUsed.svg"
+    },
+    {
+        "id": 2,
+        "img": "Etch-a-SketchApp.png",
+        "frontdescription": "Introducing an interactive Etch-a-Sketch web aplication",
+        "backdescription": "It is a basic app build with javascript where you can draw pixelart",
+        "pageLink": "https://mort5554.github.io/Etch-a-Sketch/",
+        "githubLink": "https://github.com/mort5554/Etch-a-Sketch",
+        "toolsUsed": "Etch-a-SketchAppToolsUsed.svg"
+    },
+    {
+        "id": 3,
+        "img": "Rock-Paper-ScissorsApp.png",
+        "frontdescription": "Chceck my very simple game based on rock-paper-scissors",
+        "backdescription": "It is a game where you trying to win vs computer in clasic game",
+        "pageLink": "https://mort5554.github.io/Rock-Paper-Scissors-ui/",
+        "githubLink": "https://github.com/mort5554/Rock-Paper-Scissors-ui",
+        "toolsUsed": "Rock-Paper-ScissorsAppToolsUsed.svg"
+    }
+
+]
