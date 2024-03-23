@@ -4,7 +4,7 @@
 
 <template>
     <footer>
-        <div class="footerLogo" tabindex="0">
+        <div class="footerLogo" tabindex="0" id="contactAnchor">
             <img class="logo" src="/mainIcons/M-logo.png" alt="Logo">
         </div>
         <div class="links">

@@ -2,11 +2,13 @@
 import ProjectCards from "../data/ProjectsCards.json"
 import { ref } from 'vue';
 
+const imagePathToolsIcons = new URL('/portfolio-vue/toolsIcons/', import.meta.url).href
+const imagePathMainIcons = new URL('/portfolio-vue/mainIcons/', import.meta.url).href
 const cards = ref(ProjectCards)
 </script>
 
 <template>
-  <div class="myProjectsContainer">
+  <div class="myProjectsContainer" id="projectsAnchor">
     <img src="/mainIcons/bookPageIcon.svg" alt="book Icon" class="projectIcon">
     <h1 class="myProject">MY  PROJECTS</h1>
   </div>
@@ -14,22 +16,20 @@ const cards = ref(ProjectCards)
   <div class="flip-card" v-for="card in cards" :key="card.id">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img :src="`/mainIcons/` + card.img" alt="Project icon" class="notesAppImg">
+        <img :src="imagePathMainIcons + card.img" alt="Project icon" class="notesAppImg">
         <h2>{{ card.frontdescription }}</h2>
       </div>
       <div class="flip-card-back">
         <h1>{{ card.backdescription }}</h1>
         <h1 class="toolsUsed">Tools used:</h1>
-        <img :src="`/toolsIcons/` + card.toolsUsed" alt="Tools used icons" class="toolsUsedImg">
+        <img :src="imagePathToolsIcons + card.toolsUsed" alt="Tools used icons" class="toolsUsedImg">
       </div>
     </div>
   <div class="links">
-    <div class="pinkCircle">ssss</div>
     <a :href="card.pageLink" target="_blank" rel="noreferrer" tabindex="-1"><img src="/mainIcons/open-in-new.svg" class="linkImg"></a>
     <a :href="card.githubLink" target="_blank" rel="noreferrer" tabindex="-1"><img src="/mainIcons/github.svg" class="linkImg"></a>
     </div>
   </div>
-  <div class="pinkCircle">ssss</div>
 </div>
 </template>
 

@@ -4,8 +4,8 @@
 
 <template>
 <header>
-    <div class="headline" tabindex="0">
-        <h1>Passionate Web Developer | Creating Engaging Digital Experiences</h1>
+    <div class="headline" tabindex="0" id="headerArchor">
+            <h1 class="greetings">Passionate Web Developer | Creating Engaging Digital Experiences</h1>  
     </div>
     <div class="imgContainer">
         <img src="/mainIcons/LaptopImg.png" alt="Laptop icon" class="laptopImg">
@@ -33,14 +33,15 @@ header{
     gap: 20px;
 }
 .headline{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
+    position: relative;
     text-wrap: wrap;
-    height: 10%;
+    height: 30%;
     width: 100%;
     text-shadow: 2px 2px pink;
+}
+.greetings{
+    display: flex;
+    justify-self: center;
 }
 @media (max-width: 1010px) {
     .headline{
@@ -50,6 +51,9 @@ header{
 h1{
     font-weight: bold;
     font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     animation: fade 2s linear;
     animation-timeline: view();

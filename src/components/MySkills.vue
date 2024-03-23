@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <main class="MySkills" tabindex="0">
+    <main class="MySkills" tabindex="0" id="mySkillsAnchor">
         <div class="mySkillsHeadline">
             <img class="mySkillsImg" src="/mainIcons/hammer-wrench.svg">
             <h1>SKILLS</h1>
@@ -91,12 +91,13 @@ main{
 }
 .mySkillsContainer{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     justify-content: space-around;
+    align-items: center;
 }
 .toolsSkillContainer{
-    margin: 3.5%;
+    margin: 3.2%;
     margin-left: 10%;
     width: 100%;
     height: fit-content;
@@ -157,7 +158,7 @@ main{
     color: rgb(83, 83, 83);
 }
 .mySkillsGraph{
-    height: 90%;
+    height: 95%;
     width: 40%;
     background-color: rgb(252, 203, 211);
     border-radius: 5%;
@@ -165,7 +166,7 @@ main{
     flex-direction: column;
 }
 .mySkillsDescription{
-    height: 90%;
+    height: 95%;
     width: 40%;
     background-color: rgb(252, 203, 211);
     border-radius: 5%;

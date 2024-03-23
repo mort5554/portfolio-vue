@@ -12,10 +12,10 @@ const menuNavigation = ref(true)
                 <img class="menuLogo" src="/mainIcons/M-logo.png" alt="logo">
             </div>
             <nav class="computer-nav">
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=Passionate%20Web%20Developer%20%7C%20Creating%20Engaging%20Digital%20Experiences">Home</a>
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=Engaging%20Digital%20Experiences-,SKILLS,-Vue.js">My skills</a>
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=using%20so%20far%3A-,MY%20PROJECTS,-Introducing%20a%20dynamic">Projects</a>
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=ssss-,Made%20By%20%40mort5554">Contact</a>
+                <a href="#headerArchor">Home</a>
+                <a href="#mySkillsAnchor">My skills</a>
+                <a href="#projectsAnchor">Projects</a>
+                <a href="#contactAnchor">Contact</a>
             </nav>
             <div class="burgerContainer">
                 <button @click="showModal=!showModal, menuNavigation = !menuNavigation" :class="menuNavigation == false ? `hamburger is-active` :  `hamburger`">
@@ -25,16 +25,16 @@ const menuNavigation = ref(true)
         </div>
         <nav v-show="showModal" class="mobile-nav">
             <div class="openModalFromLeft">
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=Passionate%20Web%20Developer%20%7C%20Creating%20Engaging%20Digital%20Experiences">Home</a>
+                <a href="#headerArchor" @click="showModal = !showModal">Home</a>
             </div>
             <div class="openModalFromRight">     
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=Engaging%20Digital%20Experiences-,SKILLS,-Vue.js">My skills</a>
+                <a href="#mySkillsAnchor" @click="showModal = !showModal">My skills</a>
             </div> 
             <div class="openModalFromLeft">
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=using%20so%20far%3A-,MY%20PROJECTS,-Introducing%20a%20dynamic">Projects</a>
+                <a href="#projectsAnchor" @click="showModal = !showModal">Projects</a>
             </div>
             <div class="openModalFromRight">
-                <a href="https://mort5554.github.io/portfolio-vue/#:~:text=ssss-,Made%20By%20%40mort5554">Contact</a>
+                <a href="#contactAnchor" @click="showModal = !showModal">Contact</a>
             </div>
         </nav>
     </nav>
@@ -48,7 +48,7 @@ const menuNavigation = ref(true)
 }
 .space{
     width: 100%;
-    height: 150px;
+    height: 400px;
 }
 .navContainer{
     position: absolute;
@@ -76,6 +76,7 @@ const menuNavigation = ref(true)
     box-sizing: border-box;
     margin-left: 60px;
     width: 40%;
+    height: 50%;
     text-wrap: nowrap;
 }
 @media(max-width: 835px){
