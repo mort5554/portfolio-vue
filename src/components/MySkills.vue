@@ -91,6 +91,7 @@ main{
 }
 .mySkillsContainer{
     display: flex;
+    text-align: center;
     width: 100%;
     height: 100%;
     justify-content: space-around;
@@ -107,6 +108,8 @@ main{
 }
 .toolsSkill{
     height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 .progressBar{
     height: 30px;
@@ -158,11 +161,13 @@ main{
     color: rgb(83, 83, 83);
 }
 .mySkillsGraph{
-    height: 95%;
+    height: 90%;
     width: 40%;
     background-color: rgb(252, 203, 211);
     border-radius: 5%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .mySkillsDescription{

@@ -2,8 +2,12 @@
 import ProjectCards from "../data/ProjectsCards.json"
 import { ref } from 'vue';
 
-const imagePathToolsIcons = new URL('/portfolio-vue/toolsIcons/', import.meta.url).href
-const imagePathMainIcons = new URL('/portfolio-vue/mainIcons/', import.meta.url).href
+const imagePathMainIcons = (path) => {
+  return new URL('/portfolio-vue/mainIcons/' + path, import.meta.url).href
+}
+const imagePathToolsIcons = (path) => {
+  return new URL('/portfolio-vue/toolsIcons/' + path, import.meta.url).href
+}
 const cards = ref(ProjectCards)
 </script>
 
@@ -16,13 +20,13 @@ const cards = ref(ProjectCards)
   <div class="flip-card" v-for="card in cards" :key="card.id">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img :src="imagePathMainIcons + card.img" alt="Project icon" class="notesAppImg">
+        <img :src="imagePathMainIcons(card.img)" alt="Project icon" class="notesAppImg">
         <h2>{{ card.frontdescription }}</h2>
       </div>
       <div class="flip-card-back">
         <h1>{{ card.backdescription }}</h1>
         <h1 class="toolsUsed">Tools used:</h1>
-        <img :src="imagePathToolsIcons + card.toolsUsed" alt="Tools used icons" class="toolsUsedImg">
+        <img :src="imagePathToolsIcons(card.toolsUsed)" alt="Tools used icons" class="toolsUsedImg">
       </div>
     </div>
   <div class="links">
@@ -34,13 +38,6 @@ const cards = ref(ProjectCards)
 </template>
 
 <style scoped>
-.pinkCircle{
-  position: fixed;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background-color: pink;
-}
 *{
   font-family: "Apple Chancery, cursive";
 }
@@ -50,12 +47,12 @@ const cards = ref(ProjectCards)
   margin-top: 50px;
   height: 500px;
 }
-@media (max-width: 972px) {
+@media (max-width: 1179px) {
   .cardContainer{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    height: 1100px;
+    height: fit-content;
     font-size: small;
   }
   .toolsUsed{
@@ -100,7 +97,7 @@ const cards = ref(ProjectCards)
 }
 .flip-card {
   width: 330px;
-  height: 300px;
+  height: 340px;
   margin: 50px;
 }
 .notesAppImg{
@@ -131,6 +128,7 @@ const cards = ref(ProjectCards)
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  font-size: 140%;
 }
 
 .flip-card-back {

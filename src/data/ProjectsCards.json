@@ -2,11 +2,11 @@
     {
         "id": 1,
         "img": "NotesApp.png",
-        "frontdescription": "Introducing a dynamic Todo List built",
+        "frontdescription": "Introducing a dynamic Todo List aplication",
         "backdescription": "It is a minimalist but powerful Todo App in which you can create your notes",
         "pageLink": "https://mort5554.github.io/NotesApp-vue/",
         "githubLink": "https://github.com/mort5554/NotesApp-vue",
-        "toolsUsed": "NotesAppToolsUsed.svg"
+        "toolsUsed": "NotesAppToolsUsed.webp"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "backdescription": "It is a basic app build with javascript where you can draw pixelart",
         "pageLink": "https://mort5554.github.io/Etch-a-Sketch/",
         "githubLink": "https://github.com/mort5554/Etch-a-Sketch",
-        "toolsUsed": "Etch-a-SketchAppToolsUsed.svg"
+        "toolsUsed": "Etch-a-SketchAppToolsUsed.webp"
     },
     {
         "id": 3,
@@ -24,7 +24,27 @@
         "backdescription": "It is a game where you trying to win vs computer in clasic game",
         "pageLink": "https://mort5554.github.io/Rock-Paper-Scissors-ui/",
         "githubLink": "https://github.com/mort5554/Rock-Paper-Scissors-ui",
-        "toolsUsed": "Rock-Paper-ScissorsAppToolsUsed.svg"
+        "toolsUsed": "Rock-Paper-ScissorsAppToolsUsed.webp"
+    },
+    {
+        "id": 4,
+        "img": "LoginPageApp.png",
+        "frontdescription": "My visualization of Login Page aplication",
+        "backdescription": "It is a boilplate login page webside where you can create your account that saves localy and login with it",
+        "pageLink": "https://mort5554.github.io/LoginPage-vue/",
+        "githubLink": "https://github.com/mort5554/LoginPage-vue",
+        "toolsUsed": "LoginPageAppToolsUsed.webp"
+
+    },
+    {
+        "id": 5,
+        "img": "CalculatorApp.png",
+        "frontdescription": "Introducing a calculator app",
+        "backdescription": "It is very basic calculator that can only perform one calculation",
+        "pageLink": "https://mort5554.github.io/Calculator-vue/",
+        "githubLink": "https://github.com/mort5554/Calculator-vue",
+        "toolsUsed": "CalculatorAppToolsUsed.webp"
+
     }
 
 ]

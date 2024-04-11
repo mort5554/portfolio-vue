@@ -9,7 +9,7 @@
         </div>
         <div class="links">
             <a href="https://github.com/mort5554" target="_blank" rel="noreferrer" tabindex="-1" class="githubLogo"><img src="/mainIcons/github.svg" alt="Github logo" class="githubLink"></a>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNwgMZLWSwFZdxVwCmvSqvWDjhKbXNTFmlKGxxNFgwWQCTcLHjmjQhNqZxfPBnngqxJzcLhttps://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNwgMZLWSwFZdxVwCmvSqvWDjhKbXNTFmlKGxxNFgwWQCTcLHjmjQhNqZxfPBnngqxJzcL" target="_blank" rel="noreferrer" class="gmailLogo"><img src="/mainIcons/gmail.svg" alt="Gmail Icon" tabindex="-1"></a>
+            <a href="mailto:kontozwykle013@gmail.com" target="_blank" rel="noreferrer" class="gmailLogo"><img src="/mainIcons/gmail.svg" alt="Gmail Icon" tabindex="-1"></a>
         </div>
         <div class="madeBy">
             <h1>Made By @mort5554</h1>

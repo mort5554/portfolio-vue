@@ -33,6 +33,7 @@ header{
     gap: 20px;
 }
 .headline{
+    display: flex;
     position: relative;
     text-wrap: wrap;
     height: 30%;
@@ -40,13 +41,10 @@ header{
     text-shadow: 2px 2px pink;
 }
 .greetings{
+    width: 100%;
+    text-align: center;
     display: flex;
     justify-self: center;
-}
-@media (max-width: 1010px) {
-    .headline{
-        margin-left: 5%;
-    }
 }
 h1{
     font-weight: bold;
@@ -82,7 +80,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 80%;
     border: groove 20px pink;
     border-radius: 5%;
     padding: 80px;
@@ -95,13 +93,17 @@ h1{
   animation-duration: 1ms;
 }
 @keyframes appear {
-  from {
+  0% {
     opacity: 0;
-    transform: scaleX(250%);
+    transform: scaleX(10%);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(100%);
   }
 
-  to {
-    opacity: 1;
+  100% {
+    opacity: 0;
     transform: scaleX(10%);
   }
 }

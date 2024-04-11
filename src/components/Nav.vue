@@ -48,7 +48,7 @@ const menuNavigation = ref(true)
 }
 .space{
     width: 100%;
-    height: 400px;
+    height: 200px;
 }
 .navContainer{
     position: absolute;
@@ -83,12 +83,10 @@ const menuNavigation = ref(true)
     .computer-nav{
         display: none;
     }
-}
-/*@media (max-width: 914px) {
-    .computer-nav{
-        padding-right: 70px;
+    .space{
+        height: 400px;
     }
-}*/
+}
 .computer-nav a{
     width: 100%;
     margin: 20px;
